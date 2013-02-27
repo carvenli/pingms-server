@@ -20,8 +20,11 @@ Just clone the git repository and setup the script to work on port 4176.
 It will need the following sudoers.d file
 <code bash>
 apache ALL=(ALL) NOPASSWD:/bin/ping
+
 apache ALL=(ALL) NOPASSWD:/bin/traceroute
+
 apache ALL=(ALL) NOPASSWD:/opt/ping_server/update.sh
+
 </code>
 
 Make sure to change apache to whatever user your webserver is using.
