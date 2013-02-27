@@ -14,8 +14,11 @@ The ping.ms server package which can be installed anywhere.
 Just clone the git repository and setup the script to work on port 4176.
 
 It will need the following sudoers.d file
+
 <code>apache ALL=(ALL) NOPASSWD:/bin/ping</code>
+
 <code>apache ALL=(ALL) NOPASSWD:/bin/traceroute</code>
+
 <code>apache ALL=(ALL) NOPASSWD:/opt/ping_server/update.sh</code>
 
 Make sure to change apache to whatever user your webserver is using.
