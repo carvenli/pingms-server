@@ -4,28 +4,19 @@ pingms-server
 The ping.ms server package which can be installed anywhere.
 
 ## Installing on CentOS 5
-<code bash>
-    wget -O - http://ping.ms/install_centos.sh | bash
-</code>
+<code bash>wget -O - http://ping.ms/install_centos.sh | bash</code>
 
 ## Installing on CentOS 6
-<code bash>
-    wget -O - http://ping.ms/install_centos6.sh | bash
-</code>
+<code bash>wget -O - http://ping.ms/install_centos6.sh | bash</code>
 
 ## Installing on debian and others
 
 Just clone the git repository and setup the script to work on port 4176.
 
 It will need the following sudoers.d file
-<code bash>
-apache ALL=(ALL) NOPASSWD:/bin/ping
-
-apache ALL=(ALL) NOPASSWD:/bin/traceroute
-
-apache ALL=(ALL) NOPASSWD:/opt/ping_server/update.sh
-
-</code>
+<code>apache ALL=(ALL) NOPASSWD:/bin/ping</code>
+<code>apache ALL=(ALL) NOPASSWD:/bin/traceroute</code>
+<code>apache ALL=(ALL) NOPASSWD:/opt/ping_server/update.sh</code>
 
 Make sure to change apache to whatever user your webserver is using.
 
