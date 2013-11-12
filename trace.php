@@ -10,7 +10,7 @@ $dest = $_GET['dest'];
 
 //make sure the dest is sanitized as an IP or domain using PHP filters
 if(!filter_var(gethostbyname($dest),FILTER_VALIDATE_IP))
-    throw new Exception("Invalid domain name or IP passed")
+    throw new Exception("Invalid domain name or IP passed");
 
 exec('sudo traceroute -w 1 -q 1 '.$dest,$output);
 echo implode("\n",$output);
