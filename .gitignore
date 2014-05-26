@@ -1,1 +1,8 @@
-/.idea
+node_modules
+.idea
+.nodemonignore
+*.log
+log/*
+npm-debug.log
+tmp
+config.local.js
